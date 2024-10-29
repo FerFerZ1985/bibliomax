@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.image-container {
+    max-width: 100%; /* Se asegura de que el contenedor no exceda el ancho de la pantalla */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.responsive-image {
+    width: 100%; /* La imagen tomará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
