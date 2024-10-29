@@ -12,9 +12,9 @@ body {
     box-sizing: border-box;
 }
 header{
-    position: fixed;
-    width: 100%;
-    z-index: 9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .scoll{
     height: 100px;
@@ -53,7 +53,7 @@ header{
 
 /* Imagen hero */
 .banner{
-    background-image: url(/image/fondo.jpg);
+    background-image: url(/bibliomax/image/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -147,6 +147,13 @@ header{
     color: white; 
     border-radius: 5px; 
 }
+.card-img-top {
+    transition: transform 0.5s ease; /* Suaviza la transición */
+  }
+
+.card-img-top:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+  }
 /* footer */
 footer {
     width: 100%;
