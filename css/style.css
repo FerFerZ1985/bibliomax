@@ -48,7 +48,35 @@ header{
 .navbar-gradient2{
     background: linear-gradient(to right, #e2939b, #e05d6a, #dc3545);
 }
+.carousel-img {
+    object-fit: cover;
+    width: 100%;
+}
 
+/* Alturas específicas para diferentes tamaños de pantalla */
+@media (max-width: 576px) { /* Pantallas extra pequeñas */
+    .carousel-img {
+        max-height: 200px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) { /* Pantallas pequeñas */
+    .carousel-img {
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { /* Pantallas medianas */
+    .carousel-img {
+        max-height: 400px;
+    }
+}
+
+@media (min-width: 1200px) { /* Pantallas grandes */
+    .carousel-img {
+        max-height: 700px;
+    }
+}
 /* Imagen hero */
 
 .banner {
@@ -108,10 +136,6 @@ h2 {
     border: #000000;
     
 }
-/* Carrusel de dtos */
-.carousel-img{
-    height: 700px;
-}
 /* Titulos */
 .titulo{
 
@@ -127,8 +151,16 @@ h2 {
 .card {
     margin: 1rem;
     width: 75%;
-    /* background: #dc3545; */
     background: linear-gradient(to right, #e2939b, #e05d6a, #dc3545);
+}
+@media (max-width: 576px) {
+    .card-wrapper {
+        flex-wrap: nowrap;
+    }
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 @media (min-width: 576px) {
     .card {
@@ -152,24 +184,25 @@ h2 {
     height: auto;
 }
 .card img {
-    padding: 5px;
+    padding: 10px;
     width:100%;
-    height: 450px;
+    height: 350px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .card-body {
     display: flexbox;
-    padding: -10px;
+    padding: 5px;
     text-align: center;
 }
 .card-title-libro, .card-text{
     font-size: small;
-    margin-top:20px;
+    margin-top:5px;
     color: #ffffff;
 }
 .card-text {
-    font-size: 16px;
+    font-size: 10px;
+    padding: -20px;
 }
 .button{
     margin: 0;
