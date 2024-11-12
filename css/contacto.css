@@ -17,7 +17,8 @@ header{
     z-index: 1;
 }
 .navbar{
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 1;
     width: 100%;
 }
@@ -39,7 +40,8 @@ header{
         background-color: #ffffff;
 }
 main{
-    padding-top: 150px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .ubicacion, .fotobarrio, .consulta, .preguntas{
@@ -91,21 +93,24 @@ footer{
 
 @media all and (max-width:756px){
 
-
-    .navbar{
-        height: 100px;
-    }
     .img-barrio{
-        width: 400px;
+        width: 100vw;
         height: 250px;
     }
     .mapa{
-        width: 400px;
+        width: 100vw;
         height: 250px;
     }
 
-}
+    .fotobarrio{
+        font-size: medium;
+    }
 
+    .ubicacion, .consulta{
+        font-size: larger;
+    }
+
+}
 /* responsive para tablet */
 
 @media all and (min-width:756px) and (max-width:991px){

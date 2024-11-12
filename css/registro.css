@@ -37,7 +37,6 @@
 }
 
 main{
-    
     font-size: 17px;
     font-weight: bold;
 }
@@ -61,9 +60,6 @@ footer{
 /* resposive para celular */
 
 @media all and (max-width:756px){
-    #menu{
-        padding: 300px 0px 0px 0px
-    }
     .footer{
         padding-bottom: 500px;
     }
