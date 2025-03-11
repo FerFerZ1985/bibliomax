@@ -51,7 +51,9 @@ main{
     font-size: 30px;
     text-align: center;
     padding-top: 5px;
+    width: 100%;
 }
+
 
 .mapa{
     border-radius: 10px;

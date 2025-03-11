@@ -80,7 +80,7 @@ header{
 /* Imagen hero */
 
 .banner {
-    background-image: url(/image/fondo.jpg);
+    background-image: url(/bibliomax/image/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
